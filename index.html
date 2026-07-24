@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curious2Study - Learn How to Learn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: #333;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #f8fafc;
+            padding: 20px 0;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-section img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .site-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e3a8a;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #1e3a8a;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+
+        .logo-display {
+            margin-top: 40px;
+        }
+
+        .logo-display img {
+            width: 200px;
+            height: auto;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            background-color: #f8fafc;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        /* Subjects Section */
+        .subjects {
+            padding: 60px 20px;
+        }
+
+        .subjects h2 {
+            font-size: 32px;
+            color: #1e3a8a;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .subject-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .subject-card:hover {
+            border-color: #60a5fa;
+            box-shadow: 0 10px 25px rgba(96, 165, 250, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .subject-card h3 {
+            font-size: 22px;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .subject-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .card-link {
+            display: inline-block;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-link:hover {
+            background-color: #3b82f6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #60a5fa;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin-left: 15px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .logo-display img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="curious2study.png" alt="Curious2Study Logo">
+                <a href="/" class="site-title">Curious2Study</a>
+            </div>
+            <nav>
+                <a href="#subjects">Subjects</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Learn How to Learn</h1>
+            <p>Helping students master the fundamentals through effective study strategies</p>
+            <div class="logo-display">
+                <img src="curious2study.png" alt="Curious2Study Mascot">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>Why Curious2Study?</h2>
+            <p>After years in the classroom, I've noticed the biggest obstacle students face isn't the material itself—it's not knowing how to study it effectively.</p>
+            <p>Curious2Study provides structured learning resources designed to teach you both the content and the process of learning. These materials are for high school and lower-division undergraduate students struggling with foundational courses.</p>
+            <p>Our mission is simple: help you understand the "why" behind the concepts, not just memorize the "what."</p>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects" id="subjects">
+        <h2>Explore Our Subjects</h2>
+        <div class="subjects-grid">
+            <a href="/curious2study-physics/" class="subject-card">
+                <h3>Physics</h3>
+                <p>From kinematics to fluid dynamics. Master the fundamental laws of motion and energy.</p>
+                <span class="card-link">Explore Physics →</span>
+            </a>
+
+            <a href="/curious2study-us-history/" class="subject-card">
+                <h3>US History</h3>
+                <p>Understand the events and ideas that shaped the United States.</p>
+                <span class="card-link">Explore History →</span>
+            </a>
+
+            <a href="/curious2study-preparing-for-college-success/" class="subject-card">
+                <h3>Preparing for College Success</h3>
+                <p>Get ready for college with strategies for academic success and beyond.</p>
+                <span class="card-link">Learn More →</span>
+            </a>
+
+            <a href="/curious2study-college-success/" class="subject-card">
+                <h3>College Success</h3>
+                <p>Thrive in college with effective study habits and academic strategies.</p>
+                <span class="card-link">Learn More →</span>
+            </a>
+
+            <a href="/curious2study-introductory-statistics/" class="subject-card">
+                <h3>Introductory Statistics</h3>
+                <p>Learn the fundamentals of statistics and data analysis.</p>
+                <span class="card-link">Explore Statistics →</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Curious2Study. All rights reserved.</p>
+            <p>Licensed under Creative Commons Attribution 4.0 International License (CC BY 4.0)</p>
+            <div class="footer-links">
+                <a href="https://github.com/Curious2Study">GitHub</a>
+                <a href="#about">About</a>
+                <a href="https://openstax.org">OpenStax</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

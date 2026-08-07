@@ -80,6 +80,23 @@
             font-weight: 600;
         }
 
+        .about-mission {
+            background: #f5f9ff;
+            border-left: 4px solid #004d80;
+            padding: 16px 20px;
+            border-radius: 4px;
+            margin-top: 18px;
+            margin-bottom: 6px;
+        }
+
+        .about-mission p {
+            margin-bottom: 8px;
+        }
+
+        .about-mission p:last-child {
+            margin-bottom: 0;
+        }
+
         .about-stats {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -422,7 +439,12 @@
         <div class="about-section">
             <h2>About Curious2Study</h2>
             <p class="about-lead">Curious2Study helps you learn how to study, not just what to memorize.</p>
-            <p>We build free video and audio overviews from OpenStax textbooks, with study guides and practice materials on the way.</p>
+            <p>We build free video and audio overviews from OpenStax textbooks, and we link out to study tools such as AnkiWeb and Quizlet for review and practice.</p>
+
+            <div class="about-mission">
+                <p>This project has two goals. The first is to give students a free way to study on their own, at their own pace, wherever they are.</p>
+                <p>The second is to give high school and college classes more room for hands on work. AI can now handle much of the lecturing and problem solving, so class time can be spent on activities that need a person in the room.</p>
+            </div>
 
             <div class="about-stats">
                 <div class="about-stat">
@@ -476,19 +498,17 @@
                         </span>
                         <a href="https://physics.curious2study.com" class="subject-link">Physics</a>
                     </div>
-                    <div class="subject-item coming-soon">
+                    <div class="subject-item">
                         <span class="subject-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"></path><path d="M10 3v6l-5.5 9.5A1 1 0 0 0 5.4 20h13.2a1 1 0 0 0 .9-1.5L14 9V3"></path><path d="M7.5 14.5h9"></path></svg>
                         </span>
-                        <span class="subject-link">Chemistry</span>
-                        <span class="coming-soon-badge">Coming Soon</span>
+                        <a href="https://chemistry.curious2study.com" class="subject-link">Chemistry</a>
                     </div>
-                    <div class="subject-item coming-soon">
+                    <div class="subject-item">
                         <span class="subject-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21c8 0 14-6 14-14 0-1 0-2-.3-3-4 0-8 1-10.7 3.7C5.3 10.3 5 14 5 21z"></path><path d="M5 21c0-4 1.5-7 4-9.5"></path></svg>
                         </span>
-                        <span class="subject-link">Biology</span>
-                        <span class="coming-soon-badge">Coming Soon</span>
+                        <a href="https://biology.curious2study.com" class="subject-link">Biology</a>
                     </div>
                 </div>
             </div>
@@ -544,16 +564,10 @@
                         <li>Physics (College Physics, kinematics through fluid dynamics) video upload</li>
                         <li>Preparing for College Success (for high school students) audio overview upload</li>
                         <li>College Success video upload</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-entry">
-                    <div class="timeline-date">August 2026</div>
-                    <ul class="timeline-items">
-                        <li>Statistics video upload</li>
-                        <li>US History video upload</li>
                         <li>Chemistry video upload</li>
                         <li>Biology video upload</li>
+                        <li>Statistics video upload</li>
+                        <li>US History video upload</li>
                     </ul>
                 </div>
 

@@ -88,11 +88,39 @@
             margin-bottom: 6px;
         }
 
+        .about-mission h3 {
+            color: #003366;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+        }
+
         .about-mission p {
             margin-bottom: 8px;
         }
 
         .about-mission p:last-child {
+            margin-bottom: 0;
+        }
+
+        .about-mission ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-mission li {
+            padding: 6px 0 6px 22px;
+            position: relative;
+        }
+
+        .about-mission li::before {
+            content: '\2713';
+            position: absolute;
+            left: 0;
+            color: #004d80;
+            font-weight: 700;
+        }
+
+        .about-mission li:last-child {
             margin-bottom: 0;
         }
 
@@ -438,11 +466,14 @@
         <div class="about-section">
             <h2>About Curious2Study</h2>
             <p class="about-lead">Curious2Study helps you learn how to study, not just what to memorize.</p>
-            <p>We build free video and audio overviews from OpenStax textbooks, and we link out to study tools for review and practice.</p>
+            <p>We build free video and audio overviews from OpenStax textbooks, and we link out to study tools such as AnkiWeb and Quizlet for review and practice.</p>
 
             <div class="about-mission">
-                <p>This project has two goals. The first is to give students a free way to study on their own, at their own pace, wherever they are.</p>
-                <p>The second is to give high school and college classes more room for hands on work. AI can now handle much of the lecturing and problem solving, so class time can be spent on activities that need a person in the room.</p>
+                <h3>Mission</h3>
+                <ul>
+                    <li>Give students a free way to study on their own, at their own pace, wherever they are.</li>
+                    <li>Give high school and college classes more room for hands on work. AI can now handle much of the lecturing and problem solving, so class time can be spent on activities that need a person in the room.</li>
+                </ul>
             </div>
 
             <div class="about-stats">
